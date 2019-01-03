@@ -117,7 +117,7 @@ var AppComponent = /** @class */ (function () {
             }
         });
         jquery__WEBPACK_IMPORTED_MODULE_3__(document).ready(function () {
-            jquery__WEBPACK_IMPORTED_MODULE_3__('.test').click(function () {
+            jquery__WEBPACK_IMPORTED_MODULE_3__('.flip').on('tap click', function () {
                 jquery__WEBPACK_IMPORTED_MODULE_3__(this).find('.card').toggleClass('flipped');
                 console.log("test");
             });
