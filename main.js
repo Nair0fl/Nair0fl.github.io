@@ -115,11 +115,15 @@ var AppComponent = /** @class */ (function () {
             for (var i = 0; i < /*this.listObject.length*/ 5; i++) {
                 _this.flipDiv[i] = false;
             }
-        });
-        jquery__WEBPACK_IMPORTED_MODULE_3__(document).ready(function () {
-            jquery__WEBPACK_IMPORTED_MODULE_3__('.flip').on('click', function () {
-                jquery__WEBPACK_IMPORTED_MODULE_3__(this).find('.card').toggleClass('flipped');
-                console.log("test");
+            jquery__WEBPACK_IMPORTED_MODULE_3__(document).ready(function ($) {
+                $('.flip').on('click', function () {
+                    $(this).find('.card').toggleClass('flipped');
+                    console.log("test");
+                });
+                $('.flip').on('touchstart', function () {
+                    $(this).find('.card').toggleClass('flipped');
+                    console.log("test");
+                });
             });
         });
     };
