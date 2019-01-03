@@ -63,7 +63,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* entire container, keeps perspective */\r\n.flip-container {\r\n    -webkit-perspective: 1000;\r\n    background: #ccc;\r\n    margin: 100px auto;\r\n  }\r\n/* flip the pane when clicked */\r\n.flip-container:hover .flipper, .flip-container.hover .flipper {\r\n    -webkit-transform: rotateY(180deg);\r\n  }\r\n.flip-container, .front, .back {\r\n      width: 320px;\r\n      height: 480px;\r\n  }\r\n/* flip speed goes here */\r\n.flipper {\r\n      -webkit-transition: 0.6s;\r\n      -webkit-transform-style: preserve-3d;\r\n      position: relative;\r\n  }\r\n/* hide back of pane during swap */\r\n.front, .back {\r\n      -webkit-backface-visibility: hidden;\r\n      position: absolute;\r\n      top: 0;\r\n      left: 0;\r\n  }\r\n/* front pane, placed above back */\r\n.front {\r\n    z-index: 2;\r\n    background: yellow;\r\n  }\r\n/* back, initially hidden pane */\r\n.back {\r\n    -webkit-transform: rotateY(180deg);\r\n    background: brown;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEseUNBQXlDO0FBQ3pDO0lBQ0ksMEJBQTBCO0lBQzFCLGlCQUFpQjtJQUNqQixtQkFBbUI7R0FDcEI7QUFFRCxnQ0FBZ0M7QUFDaEM7SUFDRSxtQ0FBbUM7R0FDcEM7QUFFRDtNQUNJLGFBQWE7TUFDYixjQUFjO0dBQ2pCO0FBRUQsMEJBQTBCO0FBQzFCO01BQ0kseUJBQXlCO01BQ3pCLHFDQUFxQztNQUNyQyxtQkFBbUI7R0FDdEI7QUFFRCxtQ0FBbUM7QUFDbkM7TUFDSSxvQ0FBb0M7TUFDcEMsbUJBQW1CO01BQ25CLE9BQU87TUFDUCxRQUFRO0dBQ1g7QUFFRCxtQ0FBbUM7QUFDbkM7SUFDRSxXQUFXO0lBQ1gsbUJBQW1CO0dBQ3BCO0FBRUQsaUNBQWlDO0FBQ2pDO0lBQ0UsbUNBQW1DO0lBQ25DLGtCQUFrQjtHQUNuQiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogZW50aXJlIGNvbnRhaW5lciwga2VlcHMgcGVyc3BlY3RpdmUgKi9cclxuLmZsaXAtY29udGFpbmVyIHtcclxuICAgIC13ZWJraXQtcGVyc3BlY3RpdmU6IDEwMDA7XHJcbiAgICBiYWNrZ3JvdW5kOiAjY2NjO1xyXG4gICAgbWFyZ2luOiAxMDBweCBhdXRvO1xyXG4gIH1cclxuICBcclxuICAvKiBmbGlwIHRoZSBwYW5lIHdoZW4gY2xpY2tlZCAqL1xyXG4gIC5mbGlwLWNvbnRhaW5lcjpob3ZlciAuZmxpcHBlciwgLmZsaXAtY29udGFpbmVyLmhvdmVyIC5mbGlwcGVyIHtcclxuICAgIC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGVZKDE4MGRlZyk7XHJcbiAgfVxyXG4gIFxyXG4gIC5mbGlwLWNvbnRhaW5lciwgLmZyb250LCAuYmFjayB7XHJcbiAgICAgIHdpZHRoOiAzMjBweDtcclxuICAgICAgaGVpZ2h0OiA0ODBweDtcclxuICB9XHJcbiAgXHJcbiAgLyogZmxpcCBzcGVlZCBnb2VzIGhlcmUgKi9cclxuICAuZmxpcHBlciB7XHJcbiAgICAgIC13ZWJraXQtdHJhbnNpdGlvbjogMC42cztcclxuICAgICAgLXdlYmtpdC10cmFuc2Zvcm0tc3R5bGU6IHByZXNlcnZlLTNkO1xyXG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgfVxyXG4gIFxyXG4gIC8qIGhpZGUgYmFjayBvZiBwYW5lIGR1cmluZyBzd2FwICovXHJcbiAgLmZyb250LCAuYmFjayB7XHJcbiAgICAgIC13ZWJraXQtYmFja2ZhY2UtdmlzaWJpbGl0eTogaGlkZGVuO1xyXG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgIHRvcDogMDtcclxuICAgICAgbGVmdDogMDtcclxuICB9XHJcbiAgXHJcbiAgLyogZnJvbnQgcGFuZSwgcGxhY2VkIGFib3ZlIGJhY2sgKi9cclxuICAuZnJvbnQge1xyXG4gICAgei1pbmRleDogMjtcclxuICAgIGJhY2tncm91bmQ6IHllbGxvdztcclxuICB9XHJcbiAgXHJcbiAgLyogYmFjaywgaW5pdGlhbGx5IGhpZGRlbiBwYW5lICovXHJcbiAgLmJhY2sge1xyXG4gICAgLXdlYmtpdC10cmFuc2Zvcm06IHJvdGF0ZVkoMTgwZGVnKTtcclxuICAgIGJhY2tncm91bmQ6IGJyb3duO1xyXG4gIH0iXX0= */"
+module.exports = "body{\r\n  padding-top:50px;\r\n  background: #555;\r\n}\r\n.flip {\r\n  -webkit-perspective: 800;   \r\n          perspective: 800;\r\n        position: relative;\r\n        text-align: center;\r\n        padding-bottom: 10px;\r\n}\r\n.flip .card.flipped {\r\n  -webkit-transform: rotatey(-180deg);\r\n          transform: rotatey(-180deg);\r\n}\r\n.flip .card {\r\n    height: 400px;\r\n    -webkit-transform-style: preserve-3d;\r\n    -webkit-transition: 0.5s;\r\n    transform-style: preserve-3d;\r\n    transition: 0.5s;\r\n    background-color: #fff;\r\n   \r\n}\r\n.flip .card .face {\r\n  -webkit-backface-visibility: hidden ;\r\n    backface-visibility: hidden ;\r\n   z-index: 2;\r\n}\r\n.flip .card .front {\r\n   position: absolute;\r\n   z-index: 1;\r\n   padding-bottom: 10px;\r\n}\r\n.flip .card .front img{\r\n  height: 400px;\r\n}\r\n.flip .card .img {\r\n   position: relaitve;\r\n   height: 178px;\r\n   z-index: 1;\r\n   border: 2px solid #000;\r\n}\r\n.flip .card .back {\r\n  padding-top: 20px;\r\n  -webkit-transform: rotatey(-180deg);\r\n          transform: rotatey(-180deg);\r\n  position: absolute;\r\n}\r\n.inner{\r\n  margin:0px !important;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxpQkFBaUI7RUFDakIsaUJBQWlCO0NBQ2xCO0FBQ0Q7RUFDRSx5QkFBeUI7VUFDakIsaUJBQWlCO1FBQ25CLG1CQUFtQjtRQUNuQixtQkFBbUI7UUFDbkIscUJBQXFCO0NBQzVCO0FBQ0Q7RUFDRSxvQ0FBb0M7VUFDNUIsNEJBQTRCO0NBQ3JDO0FBQ0Q7SUFDSSxjQUFjO0lBQ2QscUNBQXFDO0lBQ3JDLHlCQUF5QjtJQUN6Qiw2QkFBNkI7SUFDN0IsaUJBQWlCO0lBQ2pCLHVCQUF1Qjs7Q0FFMUI7QUFDRDtFQUNFLHFDQUFxQztJQUNuQyw2QkFBNkI7R0FDOUIsV0FBVztDQUNiO0FBQ0Q7R0FDRyxtQkFBbUI7R0FDbkIsV0FBVztHQUNYLHFCQUFxQjtDQUN2QjtBQUNEO0VBQ0UsY0FBYztDQUNmO0FBQ0Q7R0FDRyxtQkFBbUI7R0FDbkIsY0FBYztHQUNkLFdBQVc7R0FDWCx1QkFBdUI7Q0FDekI7QUFDRDtFQUNFLGtCQUFrQjtFQUNsQixvQ0FBb0M7VUFDNUIsNEJBQTRCO0VBQ3BDLG1CQUFtQjtDQUNwQjtBQUNEO0VBQ0Usc0JBQXNCO0NBQ3ZCIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJib2R5e1xyXG4gIHBhZGRpbmctdG9wOjUwcHg7XHJcbiAgYmFja2dyb3VuZDogIzU1NTtcclxufVxyXG4uZmxpcCB7XHJcbiAgLXdlYmtpdC1wZXJzcGVjdGl2ZTogODAwOyAgIFxyXG4gICAgICAgICAgcGVyc3BlY3RpdmU6IDgwMDtcclxuICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICAgIHBhZGRpbmctYm90dG9tOiAxMHB4O1xyXG59XHJcbi5mbGlwIC5jYXJkLmZsaXBwZWQge1xyXG4gIC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGV5KC0xODBkZWcpO1xyXG4gICAgICAgICAgdHJhbnNmb3JtOiByb3RhdGV5KC0xODBkZWcpO1xyXG59XHJcbi5mbGlwIC5jYXJkIHtcclxuICAgIGhlaWdodDogNDAwcHg7XHJcbiAgICAtd2Via2l0LXRyYW5zZm9ybS1zdHlsZTogcHJlc2VydmUtM2Q7XHJcbiAgICAtd2Via2l0LXRyYW5zaXRpb246IDAuNXM7XHJcbiAgICB0cmFuc2Zvcm0tc3R5bGU6IHByZXNlcnZlLTNkO1xyXG4gICAgdHJhbnNpdGlvbjogMC41cztcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XHJcbiAgIFxyXG59XHJcbi5mbGlwIC5jYXJkIC5mYWNlIHtcclxuICAtd2Via2l0LWJhY2tmYWNlLXZpc2liaWxpdHk6IGhpZGRlbiA7XHJcbiAgICBiYWNrZmFjZS12aXNpYmlsaXR5OiBoaWRkZW4gO1xyXG4gICB6LWluZGV4OiAyO1xyXG59XHJcbi5mbGlwIC5jYXJkIC5mcm9udCB7XHJcbiAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgei1pbmRleDogMTtcclxuICAgcGFkZGluZy1ib3R0b206IDEwcHg7XHJcbn1cclxuLmZsaXAgLmNhcmQgLmZyb250IGltZ3tcclxuICBoZWlnaHQ6IDQwMHB4O1xyXG59XHJcbi5mbGlwIC5jYXJkIC5pbWcge1xyXG4gICBwb3NpdGlvbjogcmVsYWl0dmU7XHJcbiAgIGhlaWdodDogMTc4cHg7XHJcbiAgIHotaW5kZXg6IDE7XHJcbiAgIGJvcmRlcjogMnB4IHNvbGlkICMwMDA7XHJcbn1cclxuLmZsaXAgLmNhcmQgLmJhY2sge1xyXG4gIHBhZGRpbmctdG9wOiAyMHB4O1xyXG4gIC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGV5KC0xODBkZWcpO1xyXG4gICAgICAgICAgdHJhbnNmb3JtOiByb3RhdGV5KC0xODBkZWcpO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxufVxyXG4uaW5uZXJ7XHJcbiAgbWFyZ2luOjBweCAhaW1wb3J0YW50O1xyXG59Il19 */"
 
 /***/ }),
 
@@ -74,7 +74,7 @@ module.exports = "/* entire container, keeps perspective */\r\n.flip-container {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n\n<sweetWord></sweetWord>\n\n<router-outlet></router-outlet>\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div class=\"container\">\n  <div class=\"row\">\n    <div *ngFor=\"let word of listObject;let i=index\" class=\"col-6 col-md-4 col-xs-6\">\n        <div class=\"flip\">\n            <div class=\"card\"> \n              <div class=\"face front\"> \n                <div class=\"inner\">\n                <img class=\"card-img-top\" [src]=\"word.url_photo\" alt=\"Card image cap\">\n                </div>\n              </div> \n              <div class=\"face back\"> \n                <div class=\"inner text-center\"> \n                    <p>{{word.contenue}}</p>\n                </div>\n              </div>\n            </div>\t \n          </div>  \n      \n    </div>\n  </div>\n</div>\n\n<router-outlet></router-outlet>\n"
 
 /***/ }),
 
@@ -90,18 +90,46 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_3__);
+
+
 
 
 var AppComponent = /** @class */ (function () {
-    function AppComponent() {
-        this.title = 'my-app';
+    function AppComponent(http) {
+        this.http = http;
+        this.title = 'Bebou';
+        this.listObject = [];
+        this.flipDiv = [];
     }
+    AppComponent.prototype.onClick = function (i) {
+        console.log(this.flipDiv[i]);
+        this.flipDiv[i] = !this.flipDiv[i];
+    };
+    AppComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.http.get("https://distancecouple.herokuapp.com/sweetWord").subscribe(function (res) {
+            _this.listObject = res;
+            for (var i = 0; i < /*this.listObject.length*/ 5; i++) {
+                _this.flipDiv[i] = false;
+            }
+        });
+        jquery__WEBPACK_IMPORTED_MODULE_3__(document).ready(function () {
+            jquery__WEBPACK_IMPORTED_MODULE_3__('.flip').click(function () {
+                jquery__WEBPACK_IMPORTED_MODULE_3__(this).find('.card').toggleClass('flipped');
+                console.log("test");
+            });
+        });
+    };
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-root',
             template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
-            styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
-        })
+            styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css"), __webpack_require__(/*! ../..//node_modules/bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -125,7 +153,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _sweetWord_sweetWord_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./sweetWord/sweetWord.component */ "./src/app/sweetWord/sweetWord.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
+/* harmony import */ var ngx_flip__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ngx-flip */ "./node_modules/ngx-flip/fesm5/ngx-flip.js");
+
+
 
 
 
@@ -138,72 +170,20 @@ var AppModule = /** @class */ (function () {
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-                _sweetWord_sweetWord_component__WEBPACK_IMPORTED_MODULE_5__["SweetWordComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]
             ],
             imports: [
+                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__["NgbModule"],
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"],
+                ngx_flip__WEBPACK_IMPORTED_MODULE_7__["FlipModule"]
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/sweetWord/sweetWord.component.css":
-/*!***************************************************!*\
-  !*** ./src/app/sweetWord/sweetWord.component.css ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/* entire container, keeps perspective */\r\n.flip-container {\r\n    -webkit-perspective: 1000;\r\n    background: #ccc;\r\n    margin: 100px auto;\r\n  }\r\n/* flip the pane when clicked */\r\n.flip-container:hover .flipper, .flip-container.hover .flipper {\r\n    -webkit-transform: rotateY(180deg);\r\n  }\r\n.flip-container, .front, .back {\r\n      width: 320px;\r\n      height: 480px;\r\n  }\r\n/* flip speed goes here */\r\n.flipper {\r\n      -webkit-transition: 0.6s;\r\n      -webkit-transform-style: preserve-3d;\r\n      position: relative;\r\n  }\r\n/* hide back of pane during swap */\r\n.front, .back {\r\n      -webkit-backface-visibility: hidden;\r\n      position: absolute;\r\n      top: 0;\r\n      left: 0;\r\n  }\r\n/* front pane, placed above back */\r\n.front {\r\n    z-index: 2;\r\n    background: yellow;\r\n  }\r\n/* back, initially hidden pane */\r\n.back {\r\n    -webkit-transform: rotateY(180deg);\r\n    background: brown;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc3dlZXRXb3JkL3N3ZWV0V29yZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHlDQUF5QztBQUN6QztJQUNJLDBCQUEwQjtJQUMxQixpQkFBaUI7SUFDakIsbUJBQW1CO0dBQ3BCO0FBRUQsZ0NBQWdDO0FBQ2hDO0lBQ0UsbUNBQW1DO0dBQ3BDO0FBRUQ7TUFDSSxhQUFhO01BQ2IsY0FBYztHQUNqQjtBQUVELDBCQUEwQjtBQUMxQjtNQUNJLHlCQUF5QjtNQUN6QixxQ0FBcUM7TUFDckMsbUJBQW1CO0dBQ3RCO0FBRUQsbUNBQW1DO0FBQ25DO01BQ0ksb0NBQW9DO01BQ3BDLG1CQUFtQjtNQUNuQixPQUFPO01BQ1AsUUFBUTtHQUNYO0FBRUQsbUNBQW1DO0FBQ25DO0lBQ0UsV0FBVztJQUNYLG1CQUFtQjtHQUNwQjtBQUVELGlDQUFpQztBQUNqQztJQUNFLG1DQUFtQztJQUNuQyxrQkFBa0I7R0FDbkIiLCJmaWxlIjoic3JjL2FwcC9zd2VldFdvcmQvc3dlZXRXb3JkLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBlbnRpcmUgY29udGFpbmVyLCBrZWVwcyBwZXJzcGVjdGl2ZSAqL1xyXG4uZmxpcC1jb250YWluZXIge1xyXG4gICAgLXdlYmtpdC1wZXJzcGVjdGl2ZTogMTAwMDtcclxuICAgIGJhY2tncm91bmQ6ICNjY2M7XHJcbiAgICBtYXJnaW46IDEwMHB4IGF1dG87XHJcbiAgfVxyXG4gIFxyXG4gIC8qIGZsaXAgdGhlIHBhbmUgd2hlbiBjbGlja2VkICovXHJcbiAgLmZsaXAtY29udGFpbmVyOmhvdmVyIC5mbGlwcGVyLCAuZmxpcC1jb250YWluZXIuaG92ZXIgLmZsaXBwZXIge1xyXG4gICAgLXdlYmtpdC10cmFuc2Zvcm06IHJvdGF0ZVkoMTgwZGVnKTtcclxuICB9XHJcbiAgXHJcbiAgLmZsaXAtY29udGFpbmVyLCAuZnJvbnQsIC5iYWNrIHtcclxuICAgICAgd2lkdGg6IDMyMHB4O1xyXG4gICAgICBoZWlnaHQ6IDQ4MHB4O1xyXG4gIH1cclxuICBcclxuICAvKiBmbGlwIHNwZWVkIGdvZXMgaGVyZSAqL1xyXG4gIC5mbGlwcGVyIHtcclxuICAgICAgLXdlYmtpdC10cmFuc2l0aW9uOiAwLjZzO1xyXG4gICAgICAtd2Via2l0LXRyYW5zZm9ybS1zdHlsZTogcHJlc2VydmUtM2Q7XHJcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICB9XHJcbiAgXHJcbiAgLyogaGlkZSBiYWNrIG9mIHBhbmUgZHVyaW5nIHN3YXAgKi9cclxuICAuZnJvbnQsIC5iYWNrIHtcclxuICAgICAgLXdlYmtpdC1iYWNrZmFjZS12aXNpYmlsaXR5OiBoaWRkZW47XHJcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICAgdG9wOiAwO1xyXG4gICAgICBsZWZ0OiAwO1xyXG4gIH1cclxuICBcclxuICAvKiBmcm9udCBwYW5lLCBwbGFjZWQgYWJvdmUgYmFjayAqL1xyXG4gIC5mcm9udCB7XHJcbiAgICB6LWluZGV4OiAyO1xyXG4gICAgYmFja2dyb3VuZDogeWVsbG93O1xyXG4gIH1cclxuICBcclxuICAvKiBiYWNrLCBpbml0aWFsbHkgaGlkZGVuIHBhbmUgKi9cclxuICAuYmFjayB7XHJcbiAgICAtd2Via2l0LXRyYW5zZm9ybTogcm90YXRlWSgxODBkZWcpO1xyXG4gICAgYmFja2dyb3VuZDogYnJvd247XHJcbiAgfSJdfQ== */"
-
-/***/ }),
-
-/***/ "./src/app/sweetWord/sweetWord.component.html":
-/*!****************************************************!*\
-  !*** ./src/app/sweetWord/sweetWord.component.html ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div class=\"flip-container\">\n\t<div class=\"flipper\">\n\t\t<div class=\"front\">\n      front of card\n\t\t</div>\n\t\t<div class=\"back\">\n      back of card\n\t\t</div>\n\t</div>\n</div>"
-
-/***/ }),
-
-/***/ "./src/app/sweetWord/sweetWord.component.ts":
-/*!**************************************************!*\
-  !*** ./src/app/sweetWord/sweetWord.component.ts ***!
-  \**************************************************/
-/*! exports provided: SweetWordComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SweetWordComponent", function() { return SweetWordComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-
-
-var SweetWordComponent = /** @class */ (function () {
-    function SweetWordComponent() {
-        this.title = 'my-sweetWord';
-    }
-    SweetWordComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'sweetWord',
-            template: __webpack_require__(/*! ./sweetWord.component.html */ "./src/app/sweetWord/sweetWord.component.html"),
-            styles: [__webpack_require__(/*! ./sweetWord.component.css */ "./src/app/sweetWord/sweetWord.component.css")]
-        })
-    ], SweetWordComponent);
-    return SweetWordComponent;
 }());
 
 
